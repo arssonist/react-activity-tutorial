@@ -1,6 +1,7 @@
 import React from 'react'
+import { Component } from 'react'
 
-export class CodeDayCount extends React.Component{
+export class CodeDayCount extends Component{
 // 2. this runs the function with the inputs below totalDays/goal
     percentToDecimal(decimal) {
 		return ((decimal * 100) + '%')
