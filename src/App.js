@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { CodeDayCount } from '../src/components/CodeDayCount'
+import { CodeDayCount } from '../src/components/CodeDayCount-as_statelss'
 import './App.css';
 
 class App extends Component {
