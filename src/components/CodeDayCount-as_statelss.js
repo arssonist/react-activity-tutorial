@@ -1,5 +1,14 @@
 import React from 'react'
 
+import FaCalendar from 'react-icons/lib/fa/calendar'
+//js
+import FaCode from 'react-icons/lib/fa/code'
+//goal
+import FaFlask from  'react-icons/lib/fa/flask'
+// ruby
+import FaKeyboardO from 'react-icons/lib/fa/keyboard-o'
+
+//days
 // making class into function-
 // 1.remove render
 // 2.remove return
@@ -47,17 +56,21 @@ export const CodeDayCount = ({
     ) => (
     <div className='code-day-count'>
         <div className="total-days">
+            <FaCalendar />
             <span>{totalDays}</span>
         </div>
         <div className="js-days">
+            <FaCode />
             <span>{jsDays}</span>
         </div>
         <div className="ruby-days">
+            <FaKeyboardO />
             <span>{rubyDays}</span>
         </div>
         <div className="goal-days">
     {/* 3. calcGoalProgress is called with the inputs- real inputs from App.js                    */}
             <span>
+                <FaFlask />
             {calcGoalProgress(totalDays, goal)}
              </span>
         </div>
