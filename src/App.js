@@ -1,14 +1,16 @@
 import React, { Component } from 'react';
-import { CodeDayCount } from '../src/components/CodeDayCount-as_statelss'
-import { CodeDayList } from '../src/components/CodeDayList'
+import { CodeDayCount } from '../src/components/CodeDayCount-as_class'
+// import { CodeDayList } from '../src/components/CodeDayList'
 import './App.css';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-{/* add the data that will be passed as props in instance of component           */}
-         <CodeDayList days={
+{/* add the data that will be passed as props in instance of component
+    */}
+        <CodeDayCount />
+         {/* <CodeDayList days={
         [
             {
                 date:new Date("1/12/2016"),
@@ -32,7 +34,7 @@ class App extends Component {
             }
          ]
      }
-         />
+         /> */}
       </div>
     );
   }

@@ -1,8 +1,16 @@
 import React from 'react'
 import { Component } from 'react'
 
+// COUNT PROPS- dif than lis props
+// count compoent as props
+//     totalDays
+//     frontendDays
+//     backendDays
+//     goal
+
 export class CodeDayCount extends Component{
 // 2. this runs the function with the inputs below totalDays/goal
+
     percentToDecimal(decimal) {
 		return ((decimal * 100) + '%')
     }
@@ -19,10 +27,10 @@ export class CodeDayCount extends Component{
                     <span>{this.props.totalDays}</span>
                 </div>
                 <div className="js-days">
-                    <span>{this.props.jsDays}</span>
+                    <span>{this.props.frontendDays}</span>
                 </div>
                 <div className="ruby-days">
-                    <span>{this.props.rubyDays}</span>
+                    <span>{this.props.backendDays}</span>
                 </div>
                 <div className="goal-days">
 {/* 3. calcGoalProgress is called with the inputs- real inputs from App.js                    */}
@@ -33,4 +41,11 @@ export class CodeDayCount extends Component{
             </div>
         )
         }
+}
+
+CodeDayCount.defaultProps =     {
+    totalDays:80,
+    frontendDays:50,
+    backendDays:30,
+    goal:100
 }

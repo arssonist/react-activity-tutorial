@@ -1,6 +1,12 @@
 import React from 'react'
 import { CodeDayRow } from './codeDayRow'
 
+// props for list are
+//     date
+//     language
+//     framework
+//     project_built
+
 export const CodeDayList = ({days}) => (
     <table>
         <thead>
@@ -18,7 +24,7 @@ export const CodeDayList = ({days}) => (
                 <CodeDayRow key={i}
                             date={day.date}
                             language={day.language}
-                            framework={day.frframework} />
+                            framework={day.framework} />
             )}
         </div>
         </tbody>
