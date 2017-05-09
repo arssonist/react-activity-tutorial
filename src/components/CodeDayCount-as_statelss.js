@@ -1,4 +1,5 @@
 import React from 'react'
+import propTypes from 'react'
 
 import FaCalendar from 'react-icons/lib/fa/calendar'
 //js
@@ -49,10 +50,10 @@ const calcGoalProgress = (totalDays, goal) => {
 // Destructure and input only in props we want rather than entire object -- them we can remove props
 
 export const CodeDayCount = ({
-    totalDays,
-    frontendDays,
-    backendDays,
-    goal}
+    frontendDays=50,
+    backendDays=30,
+    totalDays=frontendDays + backendDays,
+    goal=100}
     ) => (
     <div className='code-day-count'>
         <div className="total-days">
@@ -76,9 +77,10 @@ export const CodeDayCount = ({
         </div>
     </div>
 )
-CodeDayCount.defaultProps =  {
-    totalDays:80,
-    frontendDays:50,
-    backendDays:30,
-    goal:100
+
+CodeDayCount.propTypes = {
+    totalDays:"",
+    frontendDays:propTypes.number,
+    backendDays:propTypes.number,
+    goal:""
 }

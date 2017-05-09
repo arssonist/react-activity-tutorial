@@ -1,5 +1,5 @@
 import React from 'react'
-import { Component } from 'react'
+import { Component, propType } from 'react'
 
 // COUNT PROPS- dif than lis props
 // count compoent as props
