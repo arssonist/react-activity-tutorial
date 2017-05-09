@@ -50,8 +50,8 @@ const calcGoalProgress = (totalDays, goal) => {
 
 export const CodeDayCount = ({
     totalDays,
-    jsDays,
-    rubyDays,
+    frontendDays,
+    backendDays,
     goal}
     ) => (
     <div className='code-day-count'>
@@ -61,11 +61,11 @@ export const CodeDayCount = ({
         </div>
         <div className="js-days">
             <FaCode />
-            <span>{jsDays}</span>
+            <span>{frontendDays}</span>
         </div>
         <div className="ruby-days">
             <FaKeyboardO />
-            <span>{rubyDays}</span>
+            <span>{backendDays}</span>
         </div>
         <div className="goal-days">
     {/* 3. calcGoalProgress is called with the inputs- real inputs from App.js                    */}
@@ -76,3 +76,9 @@ export const CodeDayCount = ({
         </div>
     </div>
 )
+CodeDayCount.defaultProps =  {
+    totalDays:80,
+    frontendDays:50,
+    backendDays:30,
+    goal:100
+}

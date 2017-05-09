@@ -21,6 +21,7 @@ export const CodeDayList = ({days}) => (
 {/* inside map function- return the component CodeDayRow, which has it's own UI, and take in the data that is inputed here             */}
             <div>
             {days.map((day, i) =>
+
                 <CodeDayRow key={i}
                             date={day.date}
                             language={day.language}
@@ -30,3 +31,4 @@ export const CodeDayList = ({days}) => (
         </tbody>
     </table>
 )
+    
