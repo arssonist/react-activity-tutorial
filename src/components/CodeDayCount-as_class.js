@@ -1,5 +1,5 @@
 import React from 'react'
-import { Component, propType } from 'react'
+import { Component, PropType } from 'react'
 
 // COUNT PROPS- dif than lis props
 // count compoent as props
@@ -49,8 +49,8 @@ export class CodeDayCount extends Component{
 }
 
 CodeDayCount.defaultProps =  {
-    totalDays:80,
+    //totalDays:80,
     frontendDays:50,
     backendDays:30,
-    goal:100
+    //goal:100
 // }

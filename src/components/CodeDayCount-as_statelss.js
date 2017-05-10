@@ -1,5 +1,5 @@
 import React from 'react'
-import propTypes from 'react'
+import PropTypes from 'react'
 
 import FaCalendar from 'react-icons/lib/fa/calendar'
 //js
@@ -78,9 +78,9 @@ export const CodeDayCount = ({
     </div>
 )
 
-CodeDayCount.propTypes = {
-    totalDays:"",
-    frontendDays:propTypes.number,
-    backendDays:propTypes.number,
-    goal:""
+CodeDayCount.PropTypes = {
+    //totalDays:"",
+    frontendDays:PropTypes.number,
+    backendDays:PropTypes.number,
+    //goal:""
 }

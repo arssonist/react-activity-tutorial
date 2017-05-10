@@ -6,6 +6,7 @@ import FaCode from 'react-icons/lib/fa/code'
 import FaFlask from  'react-icons/lib/fa/flask'
 // ruby
 import FaKeyboardO from 'react-icons/lib/fa/keyboard-o'
+import { PropTypes } from 'react'
 
 export const CodeDayRow = ({
     date,
@@ -31,3 +32,11 @@ export const CodeDayRow = ({
     </tr>
 
     )
+
+CodeDayRow.propTypes = {
+//date is inputed in this special way
+    language:PropTypes.string.isRequired,
+    date:PropTypes.instanceOf(Date).isRequired,
+    framework:PropTypes.string,
+    project_built:PropTypes.bool
+}

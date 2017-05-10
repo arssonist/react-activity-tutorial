@@ -1,5 +1,6 @@
 import React from 'react'
 import { CodeDayRow } from './codeDayRow'
+import { PropTypes }  from 'react'
 
 // props for list are
 //     date
@@ -35,3 +36,6 @@ export const CodeDayList = ({days}) => (
         </tbody>
     </table>
 )
+CodeDayList.propTypes = {
+    days:PropTypes.array
+}
