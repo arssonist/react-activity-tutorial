@@ -79,8 +79,8 @@ export const CodeDayCount = ({
 )
 
 CodeDayCount.PropTypes = {
-    //totalDays:"",
+    totalDays:PropTypes.number,
     frontendDays:PropTypes.number,
     backendDays:PropTypes.number,
-    //goal:""
+    goal:PropTypes.number 
 }
