@@ -82,5 +82,5 @@ CodeDayCount.PropTypes = {
     totalDays:PropTypes.number,
     frontendDays:PropTypes.number,
     backendDays:PropTypes.number,
-    goal:PropTypes.number 
+    goal:PropTypes.number  
 }
