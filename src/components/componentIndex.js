@@ -6,12 +6,6 @@ import { CodeDayCount } from './CodeDayCount-as_statelss'
 
 
 export class ComponentIndex extends Component{
-
-    // constructor(props) {
-    //    super(props);
-    //    this.state = {date: new Date()};
-     //}
-
      constructor(props) {
         super(props);
         this.state  = {
